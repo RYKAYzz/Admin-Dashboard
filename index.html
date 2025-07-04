@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styler.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <h2 class="sidebar-title">
+          <i class="mdi mdi-view-dashboard"></i> Dashboard
+        </h2>
+
+        <ul class="nav-primary">
+          <li><i class="mdi mdi-home"></i> Home</li>
+          <li><i class="mdi mdi-account"></i> Profile</li>
+          <li><i class="mdi mdi-email"></i> Messages</li>
+          <li><i class="mdi mdi-history"></i> History</li>
+          <li><i class="mdi mdi-format-list-checks"></i> Tasks</li>
+          <li><i class="mdi mdi-account-group"></i> Communities</li>
+        </ul>
+
+        <ul class="nav-secondary">
+          <li><i class="mdi mdi-cog"></i> Settings</li>
+          <li><i class="mdi mdi-help-circle"></i> Support</li>
+          <li><i class="mdi mdi-shield-lock"></i> Privacy</li>
+        </ul>
+      </aside>
+      <header class="main-header">
+        <!-- Row 1, Col 1: Search bar -->
+        <div class="search-bar">
+          <i class="mdi mdi-magnify" style="font-size: 1.8rem"></i>
+          <input
+            type="text"
+            placeholder="Search..."
+            style="
+              width: 100%;
+              max-width: 900px;
+              border-radius: 999px;
+              height: 30px;
+              background-color: azure;
+            "
+          />
+        </div>
+
+        <!-- Row 1, Col 2: Notification + Avatar + Name -->
+        <div class="profile-summary">
+          <i class="mdi mdi-bell-outline" style="font-size: 1.8rem"></i>
+          <img
+            src="https://api.dicebear.com/6.x/adventurer/svg?seed=morgan"
+            alt="Morgan Avatar"
+            class="avatar-small"
+            style="border-radius: 999px; height: 60px; width: auto"
+          />
+
+          <span class="username" style="font-size: 1.2rem; font-weight: bold"
+            >Morgan Oakley</span
+          >
+        </div>
+
+        <!-- Row 2, Col 1: Greeting -->
+        <div class="greeting">
+          <img
+            src="https://api.dicebear.com/6.x/adventurer/svg?seed=morgan"
+            alt="Morgan Avatar"
+            class="avatar-small"
+            style="border-radius: 999px; height: 80px; width: auto"
+          />
+
+          <div class="greeting-text">
+            <p style="font-weight: bold; margin: 2px">Hi there,</p>
+            <h2 style="font-weight: bolder; margin: 2px">
+              Morgan Oakley (@morgan)
+            </h2>
+          </div>
+        </div>
+
+        <!-- Row 2, Col 2: Action Buttons -->
+        <div class="header-actions">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </header>
+      <main class="main-content" style="background-color: rgb(242, 243, 244)">
+        <section class="projects">
+          <h2>Your Projects</h2>
+
+          <div class="project-grid">
+            <div class="card">
+              <h3>Super Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="card-actions">
+                <i class="mdi mdi-star-outline"></i>
+                <i class="mdi mdi-eye-outline"></i>
+                <i class="mdi mdi-source-fork"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Less Cool Project</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="card-actions">
+                <i class="mdi mdi-star-outline"></i>
+                <i class="mdi mdi-eye-outline"></i>
+                <i class="mdi mdi-source-fork"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Impossible App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="card-actions">
+                <i class="mdi mdi-star-outline"></i>
+                <i class="mdi mdi-eye-outline"></i>
+                <i class="mdi mdi-source-fork"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Easy Peasy App</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="card-actions">
+                <i class="mdi mdi-star-outline"></i>
+                <i class="mdi mdi-eye-outline"></i>
+                <i class="mdi mdi-source-fork"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Ad Blocker</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="card-actions">
+                <i class="mdi mdi-star-outline"></i>
+                <i class="mdi mdi-eye-outline"></i>
+                <i class="mdi mdi-source-fork"></i>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Money Maker</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="card-actions">
+                <i class="mdi mdi-star-outline"></i>
+                <i class="mdi mdi-eye-outline"></i>
+                <i class="mdi mdi-source-fork"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <aside class="right-bar">
+          <section class="announcements">
+            <h2>Announcements</h2>
+            <div class="announcement-list">
+              <div class="announcement-card">
+                <h4>Site Maintenance</h4>
+                <p>Our servers will be down for maintenance tomorrow.</p>
+              </div>
+              <div class="announcement-card">
+                <h4>Community Share Day</h4>
+                <p>Join us to share your latest projects and ideas!</p>
+              </div>
+              <div class="announcement-card">
+                <h4>Updated Privacy Policy</h4>
+                <p>We’ve updated our policy to better protect your data.</p>
+              </div>
+            </div>
+          </section>
+          <section class="trending">
+            <h3>Trending</h3>
+            <div class="trending-list">
+              <div class="trending-user">
+                <img
+                  src="https://api.dicebear.com/6.x/adventurer/svg?seed=tegan"
+                  alt="Tegan Avatar"
+                  class="avatar-small"
+                />
+                <div class="user-info">
+                  <h4 class="username">@tegan</h4>
+                  <p class="user-title">World Peace Builder</p>
+                </div>
+              </div>
+
+              <div class="trending-user">
+                <img
+                  src="https://api.dicebear.com/6.x/adventurer/svg?seed=morgan"
+                  alt="Morgan Avatar"
+                  class="avatar-small"
+                />
+                <div class="user-info">
+                  <h4 class="username">@morgan</h4>
+                  <p class="user-title">Super Cool Project</p>
+                </div>
+              </div>
+
+              <div class="trending-user">
+                <img
+                  src="https://api.dicebear.com/6.x/adventurer/svg?seed=kendall"
+                  alt="Kendall Avatar"
+                  class="avatar-small"
+                />
+                <div class="user-info">
+                  <h4 class="username">@kendall</h4>
+                  <p class="user-title">Life Changing App</p>
+                </div>
+              </div>
+
+              <div class="trending-user">
+                <img
+                  src="https://api.dicebear.com/6.x/adventurer/svg?seed=alex"
+                  alt="Alex Avatar"
+                  class="avatar-small"
+                />
+                <div class="user-info">
+                  <h4 class="username">@alex</h4>
+                  <p class="user-title">No Traffic Maker</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </main>
+    </div>
+  </body>
+</html>
